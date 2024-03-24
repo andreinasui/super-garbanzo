@@ -3,7 +3,10 @@ import devtools from 'solid-devtools/vite';
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 
+import pkgjson from './package.json';
+
 export default defineConfig({
+  base: `/${pkgjson.name}/`,
   plugins: [
     /* 
     Uncomment the following line to enable solid-devtools.
